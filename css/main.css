@@ -350,12 +350,11 @@ footer p {
 
 }
 
-.lightbox2 article {
-
-}
-
-.lightbox3 article {
-  
+#lightbox2 article,
+#lightbox3 article {
+  width: 55%; 
+  margin-left: 40%;
+  padding-top: 50px;
 }
 
 .lb_text, .lb_heading { 
@@ -368,6 +367,7 @@ footer p {
   font-weight: 400;
   font-style: normal;
   font-size: 55px;
+  padding-top: 50px;
 
   letter-spacing: 3px;
   text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
@@ -379,6 +379,11 @@ footer p {
   line-height: 1.6 !important;
   margin-left: 0;
   padding-top: 2em;
+
+  font-family: "orator-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 /* turn the lightbox on using the :target pseudo selector */
