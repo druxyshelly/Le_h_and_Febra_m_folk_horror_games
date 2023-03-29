@@ -59,7 +59,7 @@ header {
 /* main section rules */
 
 /* blue ornamental border */
-#deco_border {
+.deco_border {
   height: 72px;
   position: relative;
   background-image: url("../img/chinese_deco_border.png");
@@ -134,11 +134,12 @@ header {
   line-height: 200%; 
 } 
 
-h1 {
+.carousel h1 {
   font-family: 'Fasthand', cursive;
   color: red;
+  margin-bottom: 20px;
 }
-p {
+.carousel p {
   font-family: 'IBM Plex Serif', serif;
 }
 
