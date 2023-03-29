@@ -121,6 +121,19 @@ header {
 
 }
 
+/* CAROUSEL CSS */
+
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-caption {
+  padding: 200px;
+}
+.carousel-caption p {
+  line-height: 200%; 
+} 
+
 h1 {
   font-family: 'Fasthand', cursive;
   color: red;
@@ -128,16 +141,26 @@ h1 {
 p {
   font-family: 'IBM Plex Serif', serif;
 }
+
 .c-item {
   height: 500px;
 }
 
 .c-img {
   height: 100vh;
-  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   filter: brightness(0.4);
   
 }
+
+.c-img3 {
+  height: 100vh !important;
+}
+
+
 
 /* seasons 2 and 3 */
 
@@ -303,9 +326,35 @@ footer p {
   opacity: 0.5; color: #711415; 
 }
 
+
+/* carousel return */
+
+.lightbox_close_carousel {
+  text-decoration: none;
+  font-family: "orator-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #68a4ad;
+  line-height: 200%;
+  letter-spacing: 2px;
+}
+
+.lightbox_close_carousel:hover { 
+  opacity: 0.5; color: #711415; 
+}
+
+
 .lightbox article {
   width: 100%;
-  
+
+}
+
+.lightbox2 article {
+
+}
+
+.lightbox3 article {
   
 }
 
