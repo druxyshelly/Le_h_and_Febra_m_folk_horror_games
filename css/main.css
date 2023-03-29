@@ -121,6 +121,24 @@ header {
 
 }
 
+h1 {
+  font-family: 'Fasthand', cursive;
+  color: red;
+}
+p {
+  font-family: 'IBM Plex Serif', serif;
+}
+.c-item {
+  height: 500px;
+}
+
+.c-img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.4);
+  
+}
+
 /* seasons 2 and 3 */
 
 #second_third_season {
@@ -286,10 +304,9 @@ footer p {
 }
 
 .lightbox article {
-  width: 55%;
-  margin-left: 40%;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  width: 100%;
+  
+  
 }
 
 .lb_text, .lb_heading { 
