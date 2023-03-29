@@ -334,14 +334,21 @@ footer p {
   font-family: "orator-std", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
   color: #68a4ad;
-  line-height: 200%;
+  line-height: 300%;
   letter-spacing: 2px;
+
+  height: 40px;
+  background-color: #1a2336;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #1a2336;
+  border-radius: 50px;
 }
 
 .lightbox_close_carousel:hover { 
-  opacity: 0.5; color: #711415; 
+  color: #711415; 
 }
 
 
