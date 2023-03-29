@@ -1,0 +1,321 @@
+/* these all apply to the body element -> global rules */
+
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family: "orator-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  
+  background-color: black;
+  color: white;
+
+background-image: url("../img/paper_bride_redflower_tone.png");
+background-size: 800px cover;
+background-repeat: repeat;
+background-position: center center;
+}
+
+/* main header rules */
+
+header {
+  height:100vh;
+  position: relative;
+  background-image: url("../img/paper_bride_header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+#header_block {
+  display: block;
+  text-align: center;
+  padding-top: 350px;
+}
+
+#header_block h1 {
+  font-family: "rosewood-std-fill", serif;
+  color: #711415;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250px;
+
+  letter-spacing: 3px;
+  text-shadow:0 0 5px #611415, 0 0 10px #611415,
+  0 0 20px #611415, 0 0 40px #611415;
+}
+
+/* main section rules */
+
+/* blue ornamental border */
+#deco_border {
+  height: 72px;
+  position: relative;
+  background-image: url("../img/chinese_deco_border.png");
+  background-repeat: repeat-x;
+}
+
+
+#first_season_container p {
+  margin: 150px;
+  font-family: "orator-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #68a4ad;
+  line-height: 200%;
+  letter-spacing: 2px;
+}
+
+/* season 1 */
+
+#first_season_contents { 
+
+  position: relative;
+  margin: 0 auto;
+
+  width: 1300px; 
+  height: 511px;
+  border: 15px solid #1a2336;
+  border-radius: 140px;
+  background-image: url("../img/season_one_sprite.jpg");
+  text-align: right;
+
+}
+
+#first_season_contents:hover {
+  background-position-y: -550px !important;
+}
+
+
+#first_season_contents a {  
+  text-decoration: none;
+  display: inline-block;
+  width: 1300px; 
+  height: 511px;
+
+
+  font-family: "rosewood-std-fill", serif;
+  color: #00cccc;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+
+  letter-spacing: 3px;
+  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
+  0 0 20px #68a4ad, 0 0 40px #68a4ad;
+
+  padding-top: 350px;
+  padding-right: 150px;
+
+}
+
+/* seasons 2 and 3 */
+
+#second_third_season {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  position: relative; 
+  z-index: 2;
+
+}
+
+#second_season {
+  width: 750px;
+  height: 370px;
+  background-image: url("../img/season_two_three_sprite.png");
+  z-index: 3;
+}
+
+.display-paper-bride-two {
+  margin-top: 150px;
+}
+
+#second_season:hover {
+  background-position-y: -370px !important;
+}
+
+.display-paper-bride-three {
+  margin-top: 150px;
+}
+
+#second_season a, 
+#third_season a {
+  text-decoration: none;
+
+  font-family: "rosewood-std-fill", serif;
+  color: #00cccc;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+
+  letter-spacing: 3px;
+  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
+  0 0 20px #68a4ad, 0 0 40px #68a4ad;
+  
+
+}
+
+#third_season {
+  width: 750px;
+  height: 370px;
+
+  background-image: url("../img/season_two_three_sprite.png");
+  background-position: -750px 0;
+  z-index: 4;
+
+}
+
+#third_season:hover {
+  background-position-y: -370px !important;
+}
+
+#second_third_season::after {
+  content: " ";
+  display: block;
+
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+
+  height: 244px; 
+  width: 100%;
+
+  background-image: url("../img/sequel-top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+#sequel {
+  height: 407px;
+  margin-top: -55px;
+  
+  background-image: url("../img/sequel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#sequel p {
+  line-height: 200%;
+  color: #68a4ad;
+  font-size: 35px;
+  padding: 150px;  
+}
+
+footer {
+  padding: 100px;
+  margin-top: -10px;
+  
+  background-image: url("../img/sequel-bottom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+footer p {
+  line-height: 200%;
+}
+
+
+
+
+.lightbox { 
+  width: 100vw; /* vw = viewport width => screen width */
+  height: 100vh; /* vh = viewport height => screen height */
+
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url('../img/lightbox2_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: none;
+}
+
+#lightbox2 {
+  background-image: url("../img/lightbox2_background.png");
+}
+
+#lightbox3 {
+  background-image: url("../img/lightbox3_background.png");
+}
+
+
+
+.lightbox_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 50px;
+
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.lightbox_close:hover { 
+  opacity: 0.5; color: #711415; 
+}
+
+.lightbox article {
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.lb_text, .lb_heading { 
+  text-align: left; 
+}
+
+.lb_heading {
+  font-family: "rosewood-std-fill", serif;
+  color: #00cccc;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+
+  letter-spacing: 3px;
+  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
+  0 0 20px #68a4ad, 0 0 40px #68a4ad;
+  
+}
+
+.lb_text {
+  line-height: 1.6 !important;
+  margin-left: 0;
+  padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
+
+
