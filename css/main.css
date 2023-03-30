@@ -132,11 +132,23 @@ header {
   line-height: 200%;
 }
 
-.carousel h1 {
+.carousel h3 {
   font-family: "Fasthand", cursive;
   color: red;
   margin-bottom: 20px;
 }
+
+.carousel h3::before,
+.carousel h3::after {
+    display: inline-block;
+    content: "";
+    border-top: 5px dotted #00cccc;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+
+
 .carousel p {
   font-family: "IBM Plex Serif", serif;
 }
@@ -328,13 +340,19 @@ footer p {
   background-color: #1a2336;
   margin-top: 20px;
   padding: 20px;
-  border: 1px solid #1a2336;
+  border: 5px dotted #00cccc;
   border-radius: 50px;
+
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 
 .lightbox_close_carousel:hover {
   color: #711415;
 }
+
 
 .lightbox article {
   width: 100%;
