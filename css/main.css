@@ -4,38 +4,42 @@
   border: none;
   padding: 0;
   margin: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
-html, body { height: 100% }
+html,
+body {
+  height: 100%;
+}
 
-body { 
+body {
   font-family: "orator-std", monospace;
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  
+
   background-color: black;
   color: white;
 
-background-image: url("../img/paper_bride_redflower_tone.png");
-background-size: 800px cover;
-background-repeat: repeat;
-background-position: center center;
+  background-image: url("../img/paper_bride_redflower_tone.png");
+  background-size: 800px cover;
+  background-repeat: repeat;
+  background-position: center center;
 }
 
 /* main header rules */
 
 header {
-  height:100vh;
+  height: 100vh;
   position: relative;
   background-image: url("../img/paper_bride_header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 #header_block {
@@ -52,20 +56,19 @@ header {
   font-size: 250px;
 
   letter-spacing: 3px;
-  text-shadow:0 0 5px #611415, 0 0 10px #611415,
-  0 0 20px #611415, 0 0 40px #611415;
+  text-shadow: 0 0 5px #611415, 0 0 10px #611415, 0 0 20px #611415,
+    0 0 40px #611415;
 }
 
 /* main section rules */
 
 /* blue ornamental border */
-#deco_border {
+.deco_border {
   height: 72px;
   position: relative;
   background-image: url("../img/chinese_deco_border.png");
   background-repeat: repeat-x;
 }
-
 
 #first_season_container p {
   margin: 150px;
@@ -80,31 +83,27 @@ header {
 
 /* season 1 */
 
-#first_season_contents { 
-
+#first_season_contents {
   position: relative;
   margin: 0 auto;
 
-  width: 1300px; 
+  width: 1300px;
   height: 511px;
   border: 15px solid #1a2336;
   border-radius: 140px;
   background-image: url("../img/season_one_sprite.jpg");
   text-align: right;
-
 }
 
 #first_season_contents:hover {
   background-position-y: -550px !important;
 }
 
-
-#first_season_contents a {  
+#first_season_contents a {
   text-decoration: none;
   display: inline-block;
-  width: 1300px; 
+  width: 1300px;
   height: 511px;
-
 
   font-family: "rosewood-std-fill", serif;
   color: #00cccc;
@@ -113,12 +112,11 @@ header {
   font-size: 50px;
 
   letter-spacing: 3px;
-  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
-  0 0 20px #68a4ad, 0 0 40px #68a4ad;
+  text-shadow: 0 0 5px #68a4ad, 0 0 10px #68a4ad, 0 0 20px #68a4ad,
+    0 0 40px #68a4ad;
 
   padding-top: 350px;
   padding-right: 150px;
-
 }
 
 /* CAROUSEL CSS */
@@ -131,15 +129,16 @@ header {
   padding: 200px;
 }
 .carousel-caption p {
-  line-height: 200%; 
-} 
-
-h1 {
-  font-family: 'Fasthand', cursive;
-  color: red;
+  line-height: 200%;
 }
-p {
-  font-family: 'IBM Plex Serif', serif;
+
+.carousel h1 {
+  font-family: "Fasthand", cursive;
+  color: red;
+  margin-bottom: 20px;
+}
+.carousel p {
+  font-family: "IBM Plex Serif", serif;
 }
 
 .c-item {
@@ -153,14 +152,11 @@ p {
   background-position: center center;
 
   filter: brightness(0.4);
-  
 }
 
 .c-img3 {
   height: 100vh !important;
 }
-
-
 
 /* seasons 2 and 3 */
 
@@ -171,9 +167,8 @@ p {
   padding-top: 150px;
   padding-bottom: 150px;
 
-  position: relative; 
+  position: relative;
   z-index: 2;
-
 }
 
 #second_season {
@@ -195,7 +190,7 @@ p {
   margin-top: 150px;
 }
 
-#second_season a, 
+#second_season a,
 #third_season a {
   text-decoration: none;
 
@@ -206,10 +201,8 @@ p {
   font-size: 55px;
 
   letter-spacing: 3px;
-  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
-  0 0 20px #68a4ad, 0 0 40px #68a4ad;
-  
-
+  text-shadow: 0 0 5px #68a4ad, 0 0 10px #68a4ad, 0 0 20px #68a4ad,
+    0 0 40px #68a4ad;
 }
 
 #third_season {
@@ -219,7 +212,6 @@ p {
   background-image: url("../img/season_two_three_sprite.png");
   background-position: -750px 0;
   z-index: 4;
-
 }
 
 #third_season:hover {
@@ -234,7 +226,7 @@ p {
   bottom: 50px;
   z-index: 1;
 
-  height: 244px; 
+  height: 244px;
   width: 100%;
 
   background-image: url("../img/sequel-top.png");
@@ -243,11 +235,10 @@ p {
   background-position: center center;
 }
 
-
 #sequel {
   height: 407px;
   margin-top: -55px;
-  
+
   background-image: url("../img/sequel.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,13 +249,13 @@ p {
   line-height: 200%;
   color: #68a4ad;
   font-size: 35px;
-  padding: 150px;  
+  padding: 150px;
 }
 
 footer {
   padding: 100px;
   margin-top: -10px;
-  
+
   background-image: url("../img/sequel-bottom.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,10 +266,7 @@ footer p {
   line-height: 200%;
 }
 
-
-
-
-.lightbox { 
+.lightbox {
   width: 100vw; /* vw = viewport width => screen width */
   height: 100vh; /* vh = viewport height => screen height */
 
@@ -291,10 +279,9 @@ footer p {
   overflow-y: auto;
 
   background-color: rgba(0, 0, 0, 0.85);
-  background-image: url('../img/lightbox2_background.png');
+  background-image: url("../img/lightbox2_background.png");
   background-repeat: no-repeat;
   background-size: cover;
-
 
   display: none;
 }
@@ -306,8 +293,6 @@ footer p {
 #lightbox3 {
   background-image: url("../img/lightbox3_background.png");
 }
-
-
 
 .lightbox_close {
   position: absolute;
@@ -322,10 +307,10 @@ footer p {
   font-weight: bolder;
 }
 
-.lightbox_close:hover { 
-  opacity: 0.5; color: #711415; 
+.lightbox_close:hover {
+  opacity: 0.5;
+  color: #711415;
 }
-
 
 /* carousel return */
 
@@ -334,32 +319,37 @@ footer p {
   font-family: "orator-std", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
   color: #68a4ad;
-  line-height: 200%;
+  line-height: 300%;
   letter-spacing: 2px;
+
+  height: 40px;
+  background-color: #1a2336;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #1a2336;
+  border-radius: 50px;
 }
 
-.lightbox_close_carousel:hover { 
-  opacity: 0.5; color: #711415; 
+.lightbox_close_carousel:hover {
+  color: #711415;
 }
-
 
 .lightbox article {
   width: 100%;
-
 }
 
-.lightbox2 article {
-
+#lightbox2 article,
+#lightbox3 article {
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 50px;
 }
 
-.lightbox3 article {
-  
-}
-
-.lb_text, .lb_heading { 
-  text-align: left; 
+.lb_text,
+.lb_heading {
+  text-align: left;
 }
 
 .lb_heading {
@@ -368,20 +358,24 @@ footer p {
   font-weight: 400;
   font-style: normal;
   font-size: 55px;
+  padding-top: 50px;
 
   letter-spacing: 3px;
-  text-shadow:0 0 5px #68a4ad, 0 0 10px #68a4ad,
-  0 0 20px #68a4ad, 0 0 40px #68a4ad;
-  
+  text-shadow: 0 0 5px #68a4ad, 0 0 10px #68a4ad, 0 0 20px #68a4ad,
+    0 0 40px #68a4ad;
 }
 
 .lb_text {
   line-height: 1.6 !important;
   margin-left: 0;
   padding-top: 2em;
+
+  font-family: "orator-std", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* turn the lightbox on using the :target pseudo selector */
-.lightbox:target { display: block; }
-
-
+.lightbox:target {
+  display: block;
+}
